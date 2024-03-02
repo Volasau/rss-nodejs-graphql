@@ -1,7 +1,6 @@
 import { prismaClient } from '../prismaClient.js';
 import { Profile } from '../type/types.js';
-import { ProfileType } from '../types/profile.js';
-import { ProfilesType } from '../types/profiles.js';
+import { ProfileType, ProfilesType } from '../types/profile.js';
 import { UUIDType } from '../types/uuid.js';
 
 export const profileQueries = {

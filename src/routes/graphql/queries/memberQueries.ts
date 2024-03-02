@@ -1,9 +1,8 @@
 import { GraphQLNonNull } from 'graphql';
-import { MemberType } from '../types/member.js';
+import { MemberType, MembersType } from '../types/member.js';
 import { MemberTypeId } from '../types/memberId.js';
 import { Member } from '../type/types.js';
 import { prismaClient } from '../prismaClient.js';
-import { MembersType } from '../types/members.js';
 
 export const memberTypeQueries = {
   memberType: {

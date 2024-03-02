@@ -1,7 +1,6 @@
 import { prismaClient } from '../prismaClient.js';
 import { User } from '../type/types.js';
-import { UserType } from '../types/user.js';
-import { UsersType } from '../types/users.js';
+import { UserType, UsersType } from '../types/user.js';
 import { UUIDType } from '../types/uuid.js';
 
 export const userQueries = {

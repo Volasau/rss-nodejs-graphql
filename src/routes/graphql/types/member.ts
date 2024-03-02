@@ -1,8 +1,8 @@
-import { GraphQLFloat, GraphQLInt, GraphQLObjectType } from 'graphql';
+import { GraphQLFloat, GraphQLInt, GraphQLList, GraphQLObjectType } from 'graphql';
 import { MemberTypeId } from './memberId.js';
-import { ProfilesType } from './profiles.js';
 import { Member } from '../type/types.js';
 import { prismaClient } from '../prismaClient.js';
+import { ProfilesType } from './profile.js';
 
 export const MemberType = new GraphQLObjectType({
   name: 'MemberType',
@@ -18,3 +18,5 @@ export const MemberType = new GraphQLObjectType({
     },
   }),
 });
+
+export const MembersType = new GraphQLList(MemberType);

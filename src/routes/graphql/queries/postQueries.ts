@@ -1,9 +1,8 @@
 import { GraphQLNonNull } from 'graphql';
-import { PostType } from '../types/post.js';
+import { PostType, PostsType } from '../types/post.js';
 import { UUIDType } from '../types/uuid.js';
 import { Post } from '../type/types.js';
 import { prismaClient } from '../prismaClient.js';
-import { PostsType } from '../types/posts.js';
 
 export const postQueries = {
   post: {
