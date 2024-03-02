@@ -4,7 +4,7 @@ import { ProfileType } from '../types/profile.js';
 import { ProfilesType } from '../types/profiles.js';
 import { UUIDType } from '../types/uuid.js';
 
-export const ProfileQueries = {
+export const profileQueries = {
   profile: {
     type: ProfileType,
     args: { id: { type: UUIDType } },
