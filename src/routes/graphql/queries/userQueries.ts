@@ -4,7 +4,7 @@ import { UserType } from '../types/user.js';
 import { UsersType } from '../types/users.js';
 import { UUIDType } from '../types/uuid.js';
 
-export const UserQueries = {
+export const userQueries = {
   user: {
     type: UserType,
     args: { id: { type: UUIDType } },
